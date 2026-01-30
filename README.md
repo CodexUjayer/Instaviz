@@ -23,9 +23,9 @@ InstaViz is a next-generation Python visualization library built on top of Matpl
 
 ## 📦 Installation
 
-\`\`\`bash
+```bash
 pip install instaviz
-\`\`\`
+```
 
 ---
 
