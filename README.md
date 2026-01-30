@@ -1,117 +1,115 @@
-📊 InstaViz – Intelligent Data Visualization
+# 📊 InstaViz - Intelligent Data Visualization
 
+[![PyPI version](https://badge.fury.io/py/instaviz.svg)](https://badge.fury.io/py/instaviz)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+**See truth, not just charts.**
 
+InstaViz is a next-generation Python visualization library built on top of Matplotlib that **automatically chooses the best chart type** for your data and provides **natural language insights**.
 
+---
 
+## ✨ Features
 
-See truth, not just charts.
+- 🎯 Smart Auto-Selection
+- 📈 Built-in Insights
+- 🎨 Beautiful Themes
+- 🔍 One-Line EDA
+- 📊 Statistical Annotations
+- 🚀 Zero Configuration
 
-InstaViz is a next-generation Python visualization library built on top of Matplotlib that automatically chooses the best chart type for your data and provides natural language insights.
+---
 
-✨ Features
+## 📦 Installation
 
-🎯 Smart Auto-Selection – Automatically picks the best chart for your data
-
-📈 Built-in Insights – Natural language explanations of your data
-
-🎨 Beautiful Themes – Light, dark, minimal, vibrant, corporate
-
-🔍 One-Line EDA – Full EDA with viz.show(df)
-
-📊 Statistical Annotations – Outliers, trends, stats
-
-🚀 Zero Configuration – Sensible defaults
-
-📦 Installation
+\`\`\`bash
 pip install instaviz
+\`\`\`
 
-🚀 Quick Start
+---
+
+## 🚀 Quick Start
+
+\`\`\`python
 import instaviz as viz
 import pandas as pd
 import numpy as np
 
-# Create sample data
 df = pd.DataFrame({
     'category': ['A', 'B', 'C', 'D'] * 25,
     'value': np.random.randn(100),
     'score': np.random.exponential(50, 100)
 })
 
-# 🔍 Automatic EDA
 viz.show(df)
-
-# 📊 Smart Plotting
 viz.plot(df, x='category', y='value')
-
-# 📈 Distribution Analysis
 viz.distribution(df, 'score')
-
-# 🆚 Category Comparison
 viz.compare(df, x='category', y='value')
-
-# 🔗 Correlation Heatmap
 viz.correlate(df)
+\`\`\`
 
-📖 API Reference
-Core Functions
-Function	Description
-viz.show(df)	Automatic EDA dashboard
-viz.plot(df, x, y)	Smart auto-plot
-viz.distribution(df, column)	Distribution analysis
-viz.compare(df, x, y)	Category comparison
-viz.trend(df, date_col, value_col)	Time series trends
-viz.correlate(df)	Correlation heatmap
-viz.relationship(df, x, y)	Relationship plots
-viz.target(df, target)	Feature vs target
-🎨 Themes
-# Available themes: 'instaviz', 'dark', 'minimal', 'vibrant', 'corporate'
+---
+
+## 📖 API Reference
+
+| Function | Description |
+|--------|------------|
+| viz.show(df) | Automatic EDA |
+| viz.plot(df, x, y) | Smart plot |
+| viz.distribution(df, column) | Distribution |
+| viz.compare(df, x, y) | Comparison |
+| viz.trend(df, date, value) | Time series |
+| viz.correlate(df) | Correlation |
+| viz.relationship(df, x, y) | Relationships |
+| viz.target(df, target) | Target analysis |
+
+---
+
+## 🎨 Themes
+
+\`\`\`python
 viz.set_theme('dark')
+\`\`\`
 
-⚙️ Configuration
+---
+
+## ⚙️ Configuration
+
+\`\`\`python
 viz.set_config(
     figsize=(12, 8),
     show_insights=True,
     auto_annotate=True,
     max_categories=20
 )
+\`\`\`
 
-🖼️ Example Gallery
-Distribution Analysis
-viz.distribution(df, 'price', kind='raincloud')
+---
 
-Time Series
-viz.trend(df, 'date', 'revenue', smooth=3)
+## 📋 Requirements
 
-Relationship with Grouping
-viz.relationship(df, 'age', 'income', hue='education')
+- Python >= 3.8
+- NumPy >= 1.20
+- Pandas >= 1.3
+- Matplotlib >= 3.5
+- SciPy >= 1.7
 
-📋 Requirements
+---
 
-Python >= 3.8
+## 👨‍💻 Author
 
-NumPy >= 1.20.0
+Md. Ujayer Hasnat  
+Email: dev.ujayerhasnat@gmail.com  
+LinkedIn: https://linkedin.com/in/ujayerhasnat  
+GitHub: https://github.com/CodexUjayer  
 
-Pandas >= 1.3.0
+---
 
-Matplotlib >= 3.5.0
+## 📄 License
 
-SciPy >= 1.7.0
+MIT License
 
-👨‍💻 Author
+---
 
-Md. Ujayer Hasnat
-
-📧 Email: dev.ujayerhasnat@gmail.com
-
-💼 LinkedIn: https://linkedin.com/in/ujayerhasnat
-
-🐙 GitHub: https://github.com/CodexUjayer
-
-📄 License
-
-MIT License — see the LICENSE file for details.
-
-⭐ Star History
-
-If you find this project useful, please consider giving it a ⭐ on GitHub!
+⭐ If you find this useful, please give it a star!
