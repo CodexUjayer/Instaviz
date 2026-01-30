@@ -69,6 +69,7 @@ viz.correlate(df)
 ## 🎨 Themes
 
 ```bash
+# Available themes: 'dark', 'minimal', 'vibrant', 'corporate'
 viz.set_theme('dark')
 ```
 
