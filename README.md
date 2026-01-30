@@ -1,6 +1,6 @@
 # 📊 InstaViz - Intelligent Data Visualization
 
-[![PyPI version](https://badge.fury.io/py/instaviz.svg)](https://badge.fury.io/py/instaviz)
+[![PyPI version](https://badge.fury.io/py/instavizlib.svg)](https://badge.fury.io/py/instavizlib)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -24,7 +24,7 @@ InstaViz is a next-generation Python visualization library built on top of Matpl
 ## 📦 Installation
 
 ```bash
-pip install instaviz
+pip install instavizlib
 ```
 
 ---
@@ -32,7 +32,7 @@ pip install instaviz
 ## 🚀 Quick Start
 
 ```bash
-import instaviz as viz
+import instavizlib as viz
 import pandas as pd
 import numpy as np
 
