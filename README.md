@@ -31,7 +31,7 @@ pip install instaviz
 
 ## 🚀 Quick Start
 
-\`\`\`python
+```bash
 import instaviz as viz
 import pandas as pd
 import numpy as np
@@ -47,9 +47,9 @@ viz.plot(df, x='category', y='value')
 viz.distribution(df, 'score')
 viz.compare(df, x='category', y='value')
 viz.correlate(df)
-\`\`\`
 
----
+
+```
 
 ## 📖 API Reference
 
@@ -68,22 +68,22 @@ viz.correlate(df)
 
 ## 🎨 Themes
 
-\`\`\`python
+```bash
 viz.set_theme('dark')
-\`\`\`
+```
 
 ---
 
 ## ⚙️ Configuration
 
-\`\`\`python
+```bash
 viz.set_config(
     figsize=(12, 8),
     show_insights=True,
     auto_annotate=True,
     max_categories=20
 )
-\`\`\`
+```
 
 ---
 
